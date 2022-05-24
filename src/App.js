@@ -10,10 +10,10 @@ import Register from './Components/Register/Register';
 import Purchase from './Components/Purchase/Purchase';
 import AllTools from './Components/AllTools/AllTools';
 import Dashboard from './Components/Dashboard/Dashboard';
-// import MyOrder from './Components/Dashboard/MyOrder';
+import MyOrder from './Components/Dashboard/MyOrder';
 // import AddReview from './Components/Dashboard/AddReview';
 // import MyProfile from './Components/Dashboard/MyProfile';
-// import Welcome from './Components/Dashboard/Welcome';
+import Welcome from './Components/Dashboard/Welcome';
 // import AllUser from './Components/Dashboard/Admin/AllUser';
 
 
@@ -28,11 +28,11 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/tools' element={<AllTools></AllTools>}></Route>
         <Route path="dashboard" element={<Dashboard />} >
-          {/* <Route index element={<Welcome></Welcome>}></Route>
+          <Route index element={<Welcome></Welcome>}></Route>
           <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route>
-          <Route path="add-review" element={<AddReview></AddReview>}></Route>
-          <Route path="my-profile" element={<MyProfile></MyProfile>}></Route>
-          <Route path="user" element={<AllUser></AllUser>}></Route> */}
+          {/* <Route path="add-review" element={<AddReview></AddReview>}></Route> */}
+          {/* <Route path="my-profile" element={<MyProfile></MyProfile>}></Route> */}
+          {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
           {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
         </Route>
         <Route path='/tools/:id' element={<Purchase></Purchase>}></Route>
