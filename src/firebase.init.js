@@ -13,7 +13,7 @@ import { initializeApp } from "firebase/app";
 //     messagingSenderId: process.env.REACT_APP_messagingSenderId,
 //     appId: process.env.REACT_APP_appId
 // };
-console.log(process.env)
+// console.log(firebaseConfig)
 const firebaseConfig = {
     apiKey: "AIzaSyAfOHS-rSIt9knqsiJwMJHf3pEgcREcl0g",
     authDomain: "assignment12-685d7.firebaseapp.com",
