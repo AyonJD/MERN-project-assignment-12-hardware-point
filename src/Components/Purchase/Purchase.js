@@ -49,7 +49,8 @@ const Purchase = () => {
             quantity: quantity,
             price: quantity * price,
             image,
-            productName: name
+            productName: name,
+            details,
         }
         setuserInputData(userInput);
 

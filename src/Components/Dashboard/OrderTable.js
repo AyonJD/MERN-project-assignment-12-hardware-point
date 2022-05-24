@@ -1,7 +1,8 @@
 import React from 'react';
 
 const OrderTable = ({ index, order, handleDelete }) => {
-    const { name, address, price, quantity, number, tool, _id } = order;
+    const { name, address, price, quantity, number, image, _id, details } = order;
+    console.log(order)
     return (
         <tr>
             <th>
@@ -11,12 +12,12 @@ const OrderTable = ({ index, order, handleDelete }) => {
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
                         <div className="mask mask-squircle w-12 h-12">
-                            <img src={tool.image} alt="Avatar Tailwind CSS Component" />
+                            <img src={image} alt="Avatar Tailwind CSS Component" />
                         </div>
                     </div>
                     <div>
-                        <div className="font-bold">{tool.name}</div>
-                        <div title={tool.details} className="text-sm opacity-50">{tool.details.slice(0, 30)}</div>
+                        <div className="font-bold">{name}</div>
+                        <div title={details} className="text-sm opacity-50">{details.slice(0, 30)}</div>
                     </div>
                 </div>
             </td>

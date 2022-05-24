@@ -16,6 +16,9 @@ import MyProfile from './Components/Dashboard/MyProfile';
 import Welcome from './Components/Dashboard/Welcome';
 import AllUser from './Components/Dashboard/Admin/AllUser';
 import ManageOrder from './Components/Dashboard/Admin/ManageOrder';
+import UpdateTool from './Components/Dashboard/Admin/UpdateTool';
+import ManageTools from './Components/Dashboard/Admin/ManageTools';
+import AddTools from './Components/Dashboard/Admin/AddTools';
 
 
 
@@ -32,9 +35,12 @@ function App() {
           <Route index element={<Welcome></Welcome>}></Route>
           <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route>
           <Route path="add-review" element={<AddReview></AddReview>}></Route>
+          <Route path="manageTools" element={<ManageTools></ManageTools>}></Route>
           <Route path="my-profile" element={<MyProfile></MyProfile>}></Route>
           <Route path="user" element={<AllUser></AllUser>}></Route>
           <Route path="manageOrder" element={<ManageOrder></ManageOrder>}></Route>
+          <Route path="add" element={<AddTools></AddTools>}></Route>
+          <Route path="tools/:id" element={<UpdateTool></UpdateTool>}></Route>
         </Route>
         <Route path='/tools/:id' element={<Purchase></Purchase>}></Route>
       </Routes>
