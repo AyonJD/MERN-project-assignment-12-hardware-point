@@ -7,7 +7,7 @@ import Home from './Components/Home/Home';
 import Footer from './Components/Shared/Footer';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
-// import Purchase from './Components/Purchase/Purchase';
+import Purchase from './Components/Purchase/Purchase';
 // import AllTools from './Components/AllTools/AllTools';
 // import Dashboard from './Components/Dashboard/Dashboard';
 // import MyOrder from './Components/Dashboard/MyOrder';
@@ -35,7 +35,7 @@ function App() {
         {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
         {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
         {/* </Route> */}
-        {/* <Route path='/tools/:id' element={<Purchase></Purchase>}></Route> */}
+        <Route path='/tools/:id' element={<Purchase></Purchase>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
