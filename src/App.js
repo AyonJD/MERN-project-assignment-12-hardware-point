@@ -3,7 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Navbar from './Components/Shared/Navbar';
 import 'react-toastify/dist/ReactToastify.css';
-// import Home from './Components/Home/Home';
+import Home from './Components/Home/Home';
 import Footer from './Components/Shared/Footer';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
@@ -23,17 +23,17 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Routes>
-        {/* <Route path='/' element={<Home></Home>}></Route> */}
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         {/* <Route path='/tools' element={<AllTools></AllTools>}></Route> */}
         {/* <Route path="dashboard" element={<Dashboard />} > */}
-          {/* <Route index element={<Welcome></Welcome>}></Route> */}
-          {/* <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route> */}
-          {/* <Route path="add-review" element={<AddReview></AddReview>}></Route> */}
-          {/* <Route path="my-profile" element={<MyProfile></MyProfile>}></Route> */}
-          {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
-          {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
+        {/* <Route index element={<Welcome></Welcome>}></Route> */}
+        {/* <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route> */}
+        {/* <Route path="add-review" element={<AddReview></AddReview>}></Route> */}
+        {/* <Route path="my-profile" element={<MyProfile></MyProfile>}></Route> */}
+        {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
+        {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
         {/* </Route> */}
         {/* <Route path='/tools/:id' element={<Purchase></Purchase>}></Route> */}
       </Routes>
