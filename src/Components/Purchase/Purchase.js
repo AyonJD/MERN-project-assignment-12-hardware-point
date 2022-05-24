@@ -38,16 +38,18 @@ const Purchase = () => {
     }
 
     //handle submit
-    const handleSubmitParam = data => {
-        const name = user?.displayName;
+    const handleSubmitParam = (data, e) => {
+
+        const userName = user?.displayName;
         const userInput = {
-            name,
+            userName,
             email: user?.email,
             number: data?.number,
             address: data?.address,
             quantity: quantity,
             price: quantity * price,
-            tool
+            image,
+            productName: name
         }
         setuserInputData(userInput);
 
@@ -68,6 +70,7 @@ const Purchase = () => {
                 .then(data => {
 
                     alert('Purchase Successful')
+                    e.target.reset()
                 })
 
             //post order to database
@@ -83,6 +86,7 @@ const Purchase = () => {
                     console.log(data)
                 })
         }
+
     }
 
 

@@ -36,7 +36,7 @@ const useToken = user => {
         const getToken = async () => {
 
             const email = user?.email
-            const currentUser = { email: email, role: "user" }
+            const currentUser = { email: email }
             // console.log(user?.email);
             if (email) {
                 fetch(`http://localhost:5000/user/${email}`, {

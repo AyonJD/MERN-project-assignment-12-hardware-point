@@ -11,10 +11,11 @@ import Purchase from './Components/Purchase/Purchase';
 import AllTools from './Components/AllTools/AllTools';
 import Dashboard from './Components/Dashboard/Dashboard';
 import MyOrder from './Components/Dashboard/MyOrder';
-// import AddReview from './Components/Dashboard/AddReview';
-// import MyProfile from './Components/Dashboard/MyProfile';
+import AddReview from './Components/Dashboard/AddReview';
+import MyProfile from './Components/Dashboard/MyProfile';
 import Welcome from './Components/Dashboard/Welcome';
-// import AllUser from './Components/Dashboard/Admin/AllUser';
+import AllUser from './Components/Dashboard/Admin/AllUser';
+import ManageOrder from './Components/Dashboard/Admin/ManageOrder';
 
 
 
@@ -30,10 +31,10 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} >
           <Route index element={<Welcome></Welcome>}></Route>
           <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route>
-          {/* <Route path="add-review" element={<AddReview></AddReview>}></Route> */}
-          {/* <Route path="my-profile" element={<MyProfile></MyProfile>}></Route> */}
-          {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
-          {/* <Route path="user" element={<AllUser></AllUser>}></Route> */}
+          <Route path="add-review" element={<AddReview></AddReview>}></Route>
+          <Route path="my-profile" element={<MyProfile></MyProfile>}></Route>
+          <Route path="user" element={<AllUser></AllUser>}></Route>
+          <Route path="manageOrder" element={<ManageOrder></ManageOrder>}></Route>
         </Route>
         <Route path='/tools/:id' element={<Purchase></Purchase>}></Route>
       </Routes>
