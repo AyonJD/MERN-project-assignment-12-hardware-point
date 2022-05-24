@@ -8,7 +8,7 @@ import Footer from './Components/Shared/Footer';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Purchase from './Components/Purchase/Purchase';
-// import AllTools from './Components/AllTools/AllTools';
+import AllTools from './Components/AllTools/AllTools';
 // import Dashboard from './Components/Dashboard/Dashboard';
 // import MyOrder from './Components/Dashboard/MyOrder';
 // import AddReview from './Components/Dashboard/AddReview';
@@ -26,7 +26,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        {/* <Route path='/tools' element={<AllTools></AllTools>}></Route> */}
+        <Route path='/tools' element={<AllTools></AllTools>}></Route>
         {/* <Route path="dashboard" element={<Dashboard />} > */}
         {/* <Route index element={<Welcome></Welcome>}></Route> */}
         {/* <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route> */}
