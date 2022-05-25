@@ -28,16 +28,17 @@
 
 // import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-const useToken = user => {
+const useToken = (user, userName) => {
     // console.log(user,'555');
     const [token, setToken] = useState('')
     useEffect(() => {
 
         const getToken = async () => {
 
-            const email = user?.email
-            const currentUser = { email: email }
-            // console.log(user?.email);
+            const email = user?.email;
+            const displayName = await userName;
+            // console.log(userName);
+            const currentUser = { email: email, displayName: displayName }
             if (email) {
                 fetch(`http://localhost:5000/user/${email}`, {
                     method: 'PUT',

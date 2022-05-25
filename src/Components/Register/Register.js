@@ -19,7 +19,8 @@ const Register = () => {
     const location = useLocation();
     const navigate = useNavigate()
     const from = location.state?.from?.pathname || '/';
-    const [token] = useToken(user);
+    const [userName, setUserName] = useState('')
+    const [token] = useToken(user, userName);
     useEffect(() => {
         if (token) {
             navigate(from, { replace: true })
@@ -39,6 +40,7 @@ const Register = () => {
             return;
         }
         const displayName = `${data.firstname} ${data.lastname}`
+        setUserName(displayName)
         await createUserWithEmailAndPassword(data.email, data.password);
         sendEmailVerification();
 
