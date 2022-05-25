@@ -33,7 +33,7 @@ const OrderTable = ({ index, order, handleDelete }) => {
             </td>
             <th>
                 <button onClick={() => handleDelete(_id)} className="btn btn-primary btn-xs">Remove</button>
-                <button className="btn bg-[#2CB23B] text-white btn-xs ml-5">Pay Now</button>
+                <button  className="btn bg-[#2CB23B] text-white btn-xs ml-5">Pay Now</button>
             </th>
         </tr>
 

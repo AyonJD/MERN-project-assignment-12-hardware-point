@@ -2,10 +2,6 @@ import React from 'react';
 import { toast } from 'react-toastify';
 
 const Modal = ({ modal, sendEvent, setModal }) => {
-
-
-
-
     return (
         <div className="shadow-none">
 

@@ -18,35 +18,6 @@ const ManageTools = () => {
         return <img src={loader} alt="" />
     }
 
-
-    // const partsDelete = (id) => {
-
-    //     // const confirmMsg = window.confirm("Are you sure?")
-
-    //     // if (confirmMsg) {
-    //     //     console.log("delete with id", id)
-
-
-    //     fetch(`http://localhost:5000/tools/${id}`, {
-    //         method: 'DELETE',
-    //         headers: {
-    //             'content-type': 'application/json',
-    //             'authorization': `Bearer ${localStorage.getItem('token')}`
-    //         }
-
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             if (data.deletedCount) {
-    //                 setModal({})
-    //                 refetch()
-    //                 toast.success('Tools delete successfully')
-    //             }
-
-    //         })
-
-    // }
-
     const partsDelete = (id) => {
 
 
@@ -63,7 +34,7 @@ const ManageTools = () => {
                 if (data.deletedCount) {
                     refetch()
                     setModal({})
-                    toast.success('Order delete successfully')
+                    toast.success('Product delete successfully')
                 }
             })
 

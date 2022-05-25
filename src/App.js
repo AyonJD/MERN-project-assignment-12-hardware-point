@@ -21,6 +21,7 @@ import ManageTools from './Components/Dashboard/Admin/ManageTools';
 import AddTools from './Components/Dashboard/Admin/AddTools';
 import RequiredAuth from './Components/RequiredAuth/RequiredAuth';
 import UpdateProfile from './Components/Dashboard/UpdateProfile';
+import Payment from './Components/Dashboard/Payment';
 
 
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="manageOrder" element={<ManageOrder></ManageOrder>}></Route>
           <Route path="add" element={<AddTools></AddTools>}></Route>
           <Route path="tools/:id" element={<UpdateTool></UpdateTool>}></Route>
+          <Route path="payment/:id" element={<Payment />}></Route>
         </Route>
         <Route path='/tools/:id' element={
           <RequiredAuth>
