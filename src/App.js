@@ -19,6 +19,7 @@ import ManageOrder from './Components/Dashboard/Admin/ManageOrder';
 import UpdateTool from './Components/Dashboard/Admin/UpdateTool';
 import ManageTools from './Components/Dashboard/Admin/ManageTools';
 import AddTools from './Components/Dashboard/Admin/AddTools';
+import RequiredAuth from './Components/RequiredAuth/RequiredAuth';
 
 
 
@@ -31,7 +32,9 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/tools' element={<AllTools></AllTools>}></Route>
-        <Route path="dashboard" element={<Dashboard />} >
+        <Route path="dashboard" element={<RequiredAuth>
+          <Dashboard />
+        </RequiredAuth>} >
           <Route index element={<Welcome></Welcome>}></Route>
           <Route path='/dashboard/myorder' element={<MyOrder></MyOrder>}></Route>
           <Route path="add-review" element={<AddReview></AddReview>}></Route>
@@ -42,7 +45,11 @@ function App() {
           <Route path="add" element={<AddTools></AddTools>}></Route>
           <Route path="tools/:id" element={<UpdateTool></UpdateTool>}></Route>
         </Route>
-        <Route path='/tools/:id' element={<Purchase></Purchase>}></Route>
+        <Route path='/tools/:id' element={
+          <RequiredAuth>
+            <Purchase></Purchase>
+          </RequiredAuth>
+        }></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
