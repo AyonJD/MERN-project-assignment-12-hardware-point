@@ -30,7 +30,7 @@ const AddTools = () => {
                         image: img
                     }
                     //send data to db
-                    fetch(`http://localhost:5000/parts`, {
+                    fetch(`http://localhost:5000/tools`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

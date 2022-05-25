@@ -36,9 +36,9 @@ const useToken = (user, userName) => {
         const getToken = async () => {
 
             const email = user?.email;
-            const displayName = await userName;
+            const displayName = await userName || user?.displayName;
             // console.log(userName);
-            const currentUser = { email: email, displayName: displayName }
+            const currentUser = { email: email, displayName: displayName, photoURL: user?.photoURL }
             if (email) {
                 fetch(`http://localhost:5000/user/${email}`, {
                     method: 'PUT',

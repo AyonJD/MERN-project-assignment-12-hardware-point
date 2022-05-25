@@ -20,6 +20,7 @@ import UpdateTool from './Components/Dashboard/Admin/UpdateTool';
 import ManageTools from './Components/Dashboard/Admin/ManageTools';
 import AddTools from './Components/Dashboard/Admin/AddTools';
 import RequiredAuth from './Components/RequiredAuth/RequiredAuth';
+import UpdateProfile from './Components/Dashboard/UpdateProfile';
 
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="add-review" element={<AddReview></AddReview>}></Route>
           <Route path="manageTools" element={<ManageTools></ManageTools>}></Route>
           <Route path="my-profile" element={<MyProfile></MyProfile>}></Route>
+          <Route path="my-profile/edit-profile" element={<UpdateProfile></UpdateProfile>}></Route>
           <Route path="user" element={<AllUser></AllUser>}></Route>
           <Route path="manageOrder" element={<ManageOrder></ManageOrder>}></Route>
           <Route path="add" element={<AddTools></AddTools>}></Route>

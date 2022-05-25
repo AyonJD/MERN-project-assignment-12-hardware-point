@@ -12,7 +12,7 @@ import loderImage from '../../Assets/Images/smallLoader.gif'
 const Register = () => {
     const [createUserWithEmailAndPassword, , loading, error] = useCreateUserWithEmailAndPassword(auth);
     const { register, handleSubmit, formState: { errors }, trigger } = useForm();
-    const [signInWithGoogle, , loading2, error2] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, googleUser , loading2, error2] = useSignInWithGoogle(auth);
     const [sendEmailVerification] = useSendEmailVerification(auth);
     const [user] = useAuthState(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);

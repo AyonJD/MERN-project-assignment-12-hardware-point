@@ -27,34 +27,35 @@ const MyOrder = () => {
     //     </div>
     // }
 
+
     if (loading) {
         return <img src={loader} alt="" />
     }
 
     // useEffect(() => {
-        const getItems = async () => {
-            const email = user?.email
-            const url = `http://localhost:5000/order?email=${email}`
-            // console.log(url);
-            try {
-                const { data } = await axios.get(url, {
-                    headers: {
-                        authorization: `Bearer ${localStorage.getItem('token')}`
-                    }
-                })
-                // console.log(data, "data");
-                setOrders(data)
-
-            } catch (error) {
-                // console.log(error);
-                if (error.response.status === 403 || error.response.status === 401) {
-                    signOut(auth)
-                    navigate('/login')
+    const getItems = async () => {
+        const email = user?.email
+        const url = `http://localhost:5000/orders/${email}`
+        // console.log(url);
+        try {
+            const { data } = await axios.get(url, {
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('token')}`
                 }
-                // alert(error.message)
+            })
+            // console.log(data, "data");
+            setOrders(data)
+
+        } catch (error) {
+            // console.log(error);
+            if (error.response.status === 403 || error.response.status === 401) {
+                signOut(auth)
+                navigate('/login')
             }
+            // alert(error.message)
         }
-        getItems()
+    }
+    getItems()
 
     // }, [])
 

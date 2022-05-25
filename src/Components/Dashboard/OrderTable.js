@@ -2,7 +2,7 @@ import React from 'react';
 
 const OrderTable = ({ index, order, handleDelete }) => {
     const { name, address, price, quantity, number, image, _id, details } = order;
-    console.log(order)
+    // console.log(order)
     return (
         <tr>
             <th>
