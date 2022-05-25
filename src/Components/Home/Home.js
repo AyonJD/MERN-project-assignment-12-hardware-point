@@ -11,6 +11,7 @@ import shape from '../../Assets/Images/curveAsymmetrical.svg'
 import useTools from '../Hooks/useTools';
 import ToolsCard from '../ToolsCard/ToolsCard';
 import { useNavigate } from 'react-router-dom';
+import ReviewSlider from '../Dashboard/Review/ReviewSlider';
 
 const Home = () => {
     const [tools, setTools] = useTools();
@@ -57,6 +58,9 @@ const Home = () => {
                 {
                     reversedTools.slice(0, 6).map(tool => <ToolsCard handlePurchase={handlePurchase} tool={tool} key={tool._id}></ToolsCard>)
                 }
+            </div>
+            <div className='container mx-auto my-100'>
+                <ReviewSlider></ReviewSlider>
             </div>
 
         </div>

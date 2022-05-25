@@ -13,7 +13,7 @@ const Star = ({ starId, marked }) => {
 };
 
 // Create an array of 5: Array.from({length: 5}, (v,i) => i)
-const StarRating = props => {
+const StarRating = ({ setCustomRating }) => {
     // Manages on Hover selection of a star
     const [selection, setSelection] = React.useState(0);
 
@@ -26,7 +26,7 @@ const StarRating = props => {
             starId = event.target.getAttribute("star-id");
         }
         setSelection(starId);
-
+        setCustomRating(rating)
     };
 
     return (
