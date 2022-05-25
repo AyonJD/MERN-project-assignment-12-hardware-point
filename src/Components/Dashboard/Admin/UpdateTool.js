@@ -7,7 +7,7 @@ import useTool from '../../Hooks/useTool';
 const UpdateTool = () => {
     const { id } = useParams()
     const { part } = useTool(id)
-    console.log(part)
+    // console.log(part)
     // console.log(part);
     const { register, handleSubmit, watch, formState: { errors }, trigger, reset } = useForm();
 

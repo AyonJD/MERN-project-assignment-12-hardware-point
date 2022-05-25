@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 const ManageTable = ({ o, index, refetch, sendEvent, setModal }) => {
     const navigate = useNavigate();
     const { _id, image, productName, userName, email, number, price, quantity, address } = o
+    // console.log(o)
     return (
         <tr className='text-center'>
             <th>{index + 1}</th>
