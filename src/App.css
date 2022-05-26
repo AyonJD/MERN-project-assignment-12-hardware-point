@@ -214,7 +214,8 @@ ul li a {
 } */
 
 .image-slide-bgOne {
-    background-image: url(./Assets/Images/slide1.jpg);
+    /* background-image: url(./Assets/Images/slide1.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(./Assets/Images/slide1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -222,7 +223,8 @@ ul li a {
 }
 
 .image-slide-bgTwo {
-    background-image: url(./Assets/Images/slide2.jpg);
+    /* background-image: url(./Assets/Images/slide2.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(./Assets/Images/slide2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +232,8 @@ ul li a {
 }
 
 .image-slide-bgThree {
-    background-image: url(./Assets/Images/slide3.jpg);
+    /* background-image: url(./Assets/Images/slide3.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(./Assets/Images/slide3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

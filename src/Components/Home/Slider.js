@@ -30,13 +30,25 @@ export default function App() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="image-slide-bgOne"></div>
+                    <div className="image-slide-bgTwo flex flex-col items-center justify-center">
+                        <h1 className="text-4xl font-bold text-white text-center mb-8">TOOL-CITY</h1>
+                        <h1 className="text-6xl font-bold text-white text-center">Basic to Advanced tool</h1>
+                        <h1 className="text-6xl font-bold text-white text-center mt-5">for your home prepare</h1>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="image-slide-bgTwo"></div>
+                    <div className="image-slide-bgOne flex flex-col items-center justify-center">
+                        <h1 className="text-4xl font-bold text-white text-center mb-8">TOOL-CITY</h1>
+                        <h1 className="text-6xl font-bold text-white text-center">We believe in quality-</h1>
+                        <h1 className="text-6xl font-bold text-white text-center mt-5">And our customer satisfaction</h1>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="image-slide-bgThree"></div>
+                    <div className="image-slide-bgThree flex flex-col items-center justify-center">
+                        <h1 className="text-4xl font-bold text-white text-center mb-8">TOOL-CITY</h1>
+                        <h1 className="text-6xl font-bold text-white text-center">We believe in quality-</h1>
+                        <h1 className="text-6xl font-bold text-white text-center mt-5">And our customer satisfaction</h1>
+                    </div>
                 </SwiperSlide>
             </Swiper>
         </div>
