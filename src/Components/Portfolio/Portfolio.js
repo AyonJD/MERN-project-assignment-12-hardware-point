@@ -2,7 +2,6 @@ import React from 'react';
 import myImage from '../../Assets/Images/Ayon2.jpg'
 import AutoTyping, { BlinkCursor } from 'react-auto-typing'
 import SkillsData from './SkillsData';
-import { Link } from 'react-router-dom';
 import projectOne from '../../Assets/Images/projectOne.png'
 import projectTwo from '../../Assets/Images/projectTwo.png'
 import projectThree from '../../Assets/Images/projectThree.png'

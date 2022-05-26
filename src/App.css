@@ -173,3 +173,34 @@ ul li a {
 .custom-width {
     width: 120%;
 }
+
+
+/* Not found */
+.error {
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: red;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .bg-image::before,
+    .bg-image::after,
+    .bg-image-bottom::before,
+    .bg-image-bottom::after {
+        display: none !important;
+    }
+}

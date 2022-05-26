@@ -24,6 +24,8 @@ import UpdateProfile from './Components/Dashboard/UpdateProfile';
 import Payment from './Components/Dashboard/Payment';
 import Blog from './Components/Blog/Blog';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Contact from './Components/Contact/Contact';
+import NotFound from './Components/NotFound/NotFound';
 
 
 
@@ -38,6 +40,7 @@ function App() {
         <Route path='/tools' element={<AllTools></AllTools>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
+        <Route path='/contact-us' element={<Contact></Contact>}></Route>
         <Route path="dashboard" element={<RequiredAuth>
           <Dashboard />
         </RequiredAuth>} >
@@ -58,6 +61,7 @@ function App() {
             <Purchase></Purchase>
           </RequiredAuth>
         }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer></ToastContainer>
