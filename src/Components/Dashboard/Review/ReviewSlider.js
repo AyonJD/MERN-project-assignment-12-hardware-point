@@ -14,6 +14,8 @@ import SingleReviews from "./SingleReviews";
 
 export default function App() {
     const [reviewes, setReviewes] = useState([]);
+    const reviewesCopy = [...reviewes];
+    const reversedReviewes = reviewesCopy?.reverse();
     useEffect(() => {
         fetch("https://stormy-bayou-62598.herokuapp.com/reviews/")
             .then(res => res.json())
@@ -35,7 +37,7 @@ export default function App() {
                 className="mySwiper"
             >
                 {
-                    reviewes?.map(singleReview => <SwiperSlide key={singleReview._id}>
+                    reversedReviewes?.map(singleReview => <SwiperSlide key={singleReview._id}>
                         <SingleReviews
                             singleReview={singleReview}
                         />

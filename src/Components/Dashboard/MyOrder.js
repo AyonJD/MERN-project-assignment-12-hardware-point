@@ -44,7 +44,7 @@ const MyOrder = () => {
                 if (data.deletedCount) {
                     refetch()
                     setModal({})
-                    toast.success('Order cancel successfully')
+                    toast.success('Order cancelled successfully')
                 }
                 else {
                     toast.error(`Can't Cancel the Order`)

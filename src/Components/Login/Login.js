@@ -113,7 +113,7 @@ const Login = () => {
                     loader ? loader : <button type="submit" className="text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary transition-all transition-duration:150ms md:w-1/4 font-medium hover:font-medium px-5 py-2 rounded-md">Login</button>
                 }
                 <div className="flex flex-col">
-                    <p className='text-sm md:text-base font-medium mt-5 text-slate-600'>New in Company Name? <Link className='text-blue-700 underline' to={'/register'}>Join Now</Link></p>
+                    <p className='text-sm md:text-base font-medium mt-5 text-slate-600'>New in Hardware Point? <Link className='text-blue-700 underline' to={'/register'}>Join Now</Link></p>
                     <p className='text-sm md:text-base font-medium text-slate-600 mt-2'>Forgot password? <Link onClick={handleResetPassword} className='text-blue-700 underline' to={'/login'}>Reset password</Link></p>
                 </div>
 

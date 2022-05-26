@@ -91,7 +91,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="py-6 px-4 bg-black md:flex md:items-center md:justify-between">
-                    <span className="text-sm text-gray-300 sm:text-center">© 2022 <Link to="https://github.com/AyonJD">Company Name</Link>. All Rights Reserved.
+                    <span className="text-sm text-gray-300 sm:text-center">© 2022 <Link to="https://github.com/AyonJD">Hardware Point.</Link>. All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
                         <a href="https://github.com/AyonJD" className="text-gray-400 hover:text-white">

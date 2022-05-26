@@ -61,7 +61,7 @@ const SingleReviews = ({ singleReview }) => {
             <figure className="px-10 pt-10">
                 <img className="w-1/2 rounded-full mx-auto" src={
                     user ? user?.photoURL : unknownImage
-                } alt="Shoes" />
+                } alt={user?.displayName} />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{user?.displayName}</h2>

@@ -12,7 +12,7 @@ import { signOut } from 'firebase/auth';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const user = useAuthState(auth)
-    // console.log(user);
+    // console.log(user[0]?.displayName);
     const navigate = useNavigate();
     //Signout------->
     const handleSignOut = () => {
@@ -113,6 +113,9 @@ const Navbar = () => {
                                         Contact
                                     </CustomLink>
                                 </div>
+                                {
+                                    user[0]?.displayName && <h1 className='cursor-pointer text-xl font-bold border border-gray-500 rounded-sm text-primary px-1' onClick={() => navigate(`dashboard/my-profile`)}>{user[0]?.displayName.split(' ')[0]}</h1>
+                                }
                                 {
                                     user[0] ? <button onClick={handleSignOut} className='md:ml-24 text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary transition-all transition-duration:150ms font-medium hover:font-medium px-5 py-1 rounded-md'>Logout</button> : <button onClick={() => navigate('/login')} className='md:ml-24 text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary  transition-all transition-duration:150ms font-medium hover:font-medium px-5 py-1 rounded-md'>Login</button>
                                 }

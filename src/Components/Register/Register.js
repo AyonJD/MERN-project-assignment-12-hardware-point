@@ -45,7 +45,7 @@ const Register = () => {
         sendEmailVerification();
 
         await updateProfile({ displayName });
-        alert('Updated profile');
+        // toast.success('Profile Created Successfully!');
 
     }
     console.log(user)

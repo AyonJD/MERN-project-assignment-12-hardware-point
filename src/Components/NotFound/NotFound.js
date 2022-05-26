@@ -11,8 +11,8 @@ const NotFound = () => {
                 <div>
                     <h1 className='text-2xl md:text-5xl text-center md:text-left font-semibold'>Don't cry! It's just a 404</h1>
                     <div className='flex flex-col mt-6'>
-                        <button onClick={() => navigate('/')} className='button text-sm md:text-md font-bold px-8 py-2 rounded text-white mb-4 bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms'>Go Back to Our Site</button>
-                        <button onClick={() => navigate(-1)} className='button text-sm md:text-md font-bold px-8 py-2 rounded text-white bg-[#6D9900] border-2 border-transparent hover:border-2 hover:border-[#6D9900] hover:bg-transparent hover:text-[#6D9900] transition-all transition-duration:150ms'>Go Back to The Previous Page</button>
+                        <button onClick={() => navigate('/')} className='button text-sm md:text-md font-bold px-8 py-2 rounded text-white mb-4 bg-primary border-2 border-transparent hover:border-2 hover:border-primary hover:bg-transparent hover:text-primary transition-all transition-duration:150ms'>Go Back to Our Site</button>
+                        <button onClick={() => navigate(-1)} className='button text-sm md:text-md font-bold px-8 py-2 rounded text-white bg-primary border-2 border-transparent hover:border-2 hover:border-primary hover:bg-transparent hover:text-primary transition-all transition-duration:150ms'>Go Back to The Previous Page</button>
                     </div>
                 </div>
             </div>
