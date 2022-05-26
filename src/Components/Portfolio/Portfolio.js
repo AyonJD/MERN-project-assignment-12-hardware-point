@@ -9,7 +9,7 @@ import projectThree from '../../Assets/Images/projectThree.png'
 const Portfolio = () => {
     return (
         <>
-            <div className='md:flex justify-between container mx-auto'>
+            <div className='md:flex justify-between container mx-auto px-4 md:px-0 md:my-14'>
                 <div className="auto-type flex-1">
                     <AutoTyping
                         active // <boolean>
@@ -33,32 +33,32 @@ const Portfolio = () => {
                     </p>
 
                 </div>
-                <div className="image flex-1 ml-5 ">
-                    <img className='w-1/2 ml-auto' src={myImage} alt="" />
+                <div className="image flex-1 md:ml-5 mt-10 md:mt-0">
+                    <img className='md:w-1/2 md:ml-auto' src={myImage} alt="" />
                 </div>
             </div>
             {/* Skills */}
 
-            <div className="container mx-auto md:flex my-28">
+            <div className="container mx-auto md:flex my-28 px-10 md:px-0">
                 <div className="custom-width">
                     <SkillsData></SkillsData>
                 </div>
                 <div>
-                    <h1 className='text-center text-3xl font-semibold mb-10'>Sample MERN projects</h1>
+                    <h1 className='text-center md:mb-10 md:my-0 my-10 text-uppercase pb-5 text-primary text-4xl md:text-5xl mt-20 font-semibold custom-border-primary w-fit mx-auto'>Sample MERN projects</h1>
                     <div className="grid grid-cols-3">
                         <div className="mx-3">
                             <a href="https://flavoro-4fd30.web.app/">
-                                <img className='w-1/3 ml-auto object-fill' src={projectOne} alt="" />
+                                <img className='w-full ml-auto object-fill' src={projectOne} alt="" />
                             </a>
                         </div>
                         <div className="mx-3">
                             <a href="https://ivent-3c76f.web.app/">
-                                <img className='w-1/3 ml-auto object-fill' src={projectThree} alt="" />
+                                <img className=' w-full ml-auto object-fill' src={projectThree} alt="" />
                             </a>
                         </div>
                         <div className="mx-3">
                             <a href="https://github.com/AyonJD/practice-01-bootstrap">
-                                <img className='w-1/3 ml-auto object-fill' src={projectTwo} alt="" />
+                                <img className=' w-full ml-auto object-fill' src={projectTwo} alt="" />
                             </a>
                         </div>
 

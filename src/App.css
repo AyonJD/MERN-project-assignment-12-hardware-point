@@ -164,6 +164,13 @@ ul li a {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 600px) {
+    .auto-type span {
+        font-size: 30px;
+    }
+
+}
+
 .auto-type p {
     line-height: 1.7;
     word-spacing: 1px;
@@ -172,6 +179,13 @@ ul li a {
 /* Portfolio width */
 .custom-width {
     width: 130%;
+}
+
+@media only screen and (max-width: 600px) {
+    .custom-width {
+        width: 100%;
+    }
+
 }
 
 
@@ -302,3 +316,6 @@ ul li a {
     font-size: 14px;
     padding: 18px;
 }
+
+/* Progress nar */
+

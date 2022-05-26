@@ -104,10 +104,10 @@ const CVData = {
         }
     ],
     colors: {
-        bar: "red",
+        bar: "green",
         title: {
             text: "#fff",
-            background: "green"
+            background: "primary"
         }
     },
 

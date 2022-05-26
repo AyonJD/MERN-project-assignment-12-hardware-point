@@ -21,7 +21,7 @@ class SkillsData extends Component {
                         {Data.skills.map((element, id) => {
                             if (element.range === 2) {
                                 return (
-                                    <span className="font-bold">
+                                    <span className="font-bold mb-10 md:mb-0">
                                         {id === Data.skills.length - 1
                                             ? element.type + "."
                                             : element.type + ", "}
