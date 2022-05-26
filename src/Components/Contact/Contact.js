@@ -11,7 +11,7 @@ const Contact = ({ children }) => {
 
                         <div className='custom-border-primary w-fit mx-auto pb-4'>
                             <h1 className="text-uppercase text-center text-primary text-4xl md:text-5xl mt-20 font-semibold mb-3 ">
-                                {children}
+                                {children ? children : 'Contact Us'}
                             </h1>
                             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
                                 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
