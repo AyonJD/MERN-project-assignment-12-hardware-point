@@ -53,8 +53,8 @@ const MyOrder = () => {
 
     }
     return (
-        <div>
-            {orders?.length ? <h1 className='font-bold text-2xl sp-style text-blue-900 mt-10'>Here is the {orders?.length} {orders?.length == 1 ? 'tool' : 'tools'} that you ordered :-</h1> : <h1 className='font-bold text-2xl sp-style text-red-900 mt-10'>You Don't Have any order</h1>}
+        <div className='px-6 md:px-0'>
+            {orders?.length ? <h1 className='font-bold text-2xl sp-style text-blue-900 mt-10'>You have ordered {orders?.length} {orders?.length == 1 ? 'tool' : 'tools'} :-</h1> : <h1 className='font-bold text-2xl sp-style text-red-900 mt-10'>You Don't Have any order</h1>}
             {
                 modal?._id && <Modal
                     modal={modal}

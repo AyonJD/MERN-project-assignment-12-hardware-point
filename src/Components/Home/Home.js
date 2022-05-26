@@ -27,7 +27,7 @@ const Home = () => {
         <div className='mb-10'>
             <Slider></Slider>
 
-            <div className='bg-gradient-to-t from-primary to-secondary'>
+            <div className='bg-gradient-to-t from-primary to-secondary mt-0 md:mt-16'>
                 <div className="custom-shape-divider-top-1653206227">
                     <img src={shape} alt="" />
                 </div>

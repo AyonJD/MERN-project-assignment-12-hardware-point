@@ -4,14 +4,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const OrderCard = ({ o, index, refetch, sendEvent, setModal }) => {
-    const { _id, img, isDeliverd, productName, number, price, quantity, address, transactionId } = o
+    const { _id, image, isDeliverd, productName, number, price, quantity, address, transactionId } = o
     console.log(o);
     return (
         <tr className='text-center'>
             <th>{index + 1}</th>
             <td><div className="avatar">
                 <div className="w-20 rounded">
-                    <img src={img} alt="Tailwind-CSS-Avatar-component" />
+                    <img src={image} alt="Tailwind-CSS-Avatar-component" />
                 </div>
             </div></td>
 
@@ -28,7 +28,7 @@ const OrderCard = ({ o, index, refetch, sendEvent, setModal }) => {
 
             </td>
             <td>{isDeliverd
-                ? <span className='text-blue-700 sp-style font-bold text-xl'>Your Product is on the way. </span> : <span className='text-red-700 sp-style font-bold text-xl'>Pending.. </span>
+                ? <span className=' sp-style font-bold text-xl'>On the way. </span> : <span className='text-red-700 sp-style font-bold text-xl'>Pending.. </span>
 
             }
 
@@ -66,7 +66,7 @@ const OrderCard = ({ o, index, refetch, sendEvent, setModal }) => {
                 }
 
                 {(price && o.paid) && <span className='text-green-700 sp-style text-center text-xl font-bold' >
-                    Already  Paid <FontAwesomeIcon className='pl-2' icon={faCheck}></FontAwesomeIcon>
+                    Paid <FontAwesomeIcon className='pl-2' icon={faCheck}></FontAwesomeIcon>
                 </span>}
             </td>
 

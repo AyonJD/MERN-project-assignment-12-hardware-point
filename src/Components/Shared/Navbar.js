@@ -45,11 +45,10 @@ const Navbar = () => {
                     <div className="flex items-center justify-between md:block">
                         <div className="flex items-center">
                             <div className="flex-shrink-0 w-fit">
-                                <img onClick={() => navigate('/')}
-                                    className="cursor-pointer"
-                                    src={logo}
-                                    alt="Workflow"
-                                />
+                                <h1 onClick={() => navigate('/')}
+                                    className="cursor-pointer uppercase text-xl md:text-2xl font-bold logo">
+                                    Hardware Point.
+                                </h1>
                             </div>
                             <div className="hidden md:flex justify-between items-center md:ml-auto">
                                 <div className="nav-item ml-10 flex items-baseline space-x-4 text-lg">
