@@ -30,11 +30,11 @@ const AddReview = () => {
 
     }
     return (
-        <div className='text-center'>
+        <div className='text-center mt-10 md:mt-0'>
             <h1>Please leave a review</h1>
             <StarRating setCustomRating={setCustomRating}></StarRating>
             <form onSubmit={handleSubmit(onSubmitReview)}>
-                <textarea className="textarea textarea-bordered w-1/2" placeholder="Your Review"
+                <textarea className="textarea textarea-bordered w-4/5 md:w-1/2" placeholder="Your Review"
                     {...register("review", { required: true, minLength: 10 })}
                 ></textarea>
                 <div className='text-center'>

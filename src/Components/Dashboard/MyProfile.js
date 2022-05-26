@@ -41,7 +41,7 @@ const MyProfile = () => {
     }
     getItems()
     return (
-        <div>
+        <div className='mt-10 md:mt-0'>
             {
                 user?.map(singleUser => <ProfileCard singleUser={singleUser} key={singleUser._id}></ProfileCard>)
             }
