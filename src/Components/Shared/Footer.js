@@ -7,7 +7,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 const Footer = () => {
     const [user] = useAuthState(auth)
     return (
-        <div>
+        <div className='mt-14'>
 
             <footer className="bg-gradient-to-b from-primary to-secondary">
                 <div className="custom-shape-divider-top-1653206227">

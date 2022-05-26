@@ -133,8 +133,8 @@ const UpdateProfile = () => {
 
     return (
         <>
-            <h1 className='mt-10 text-3xl text-center sp-style'>Update Your Profile</h1>
-            <div className='w-1/2 mx-auto'>
+            <h1 className='mt-10 text-3xl text-center sp-style '>Update Your Profile</h1>
+            <div className='md:w-1/2 w-3/4 mx-auto'>
 
                 <form className='w-full mx-auto' onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-full">

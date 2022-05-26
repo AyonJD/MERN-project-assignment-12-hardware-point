@@ -62,15 +62,15 @@ const AddTools = () => {
     }
     return (
         <div>
-            <form className='m-5 mx-auto' onSubmit={handleSubmit(handleAddProduct)}>
-                <div className="form-control w-full max-w-xs">
+            <form className='mt-10 text-3xl md:w-1/2 w-3/4 mx-auto text-center' onSubmit={handleSubmit(handleAddProduct)}>
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Name</span>
                     </label>
                     <input
                         type="text"
                         placeholder="product Name"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         {...register("name", {
                             required: {
                                 value: true,
@@ -82,14 +82,14 @@ const AddTools = () => {
                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Price</span>
                     </label>
                     <input
                         type="number"
                         placeholder="price"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         {...register("price", {
                             required: {
                                 value: true,
@@ -101,14 +101,14 @@ const AddTools = () => {
                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">AvailableQuantity</span>
                     </label>
                     <input
                         type="number"
                         placeholder="availableQuantity"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         {...register("availableQuantity", {
                             required: {
                                 value: true,
@@ -120,14 +120,14 @@ const AddTools = () => {
                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">MinOrderQuantity</span>
                     </label>
                     <input
                         type="number"
                         placeholder="availableQuantity"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         {...register("minOrderQuantity", {
                             required: {
                                 value: true,
@@ -139,7 +139,7 @@ const AddTools = () => {
                         {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Details</span>
                     </label>
@@ -147,7 +147,7 @@ const AddTools = () => {
                         row={5} col={20}
                         type="number"
                         placeholder="details"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         {...register("details", {
                             required: {
                                 value: true,
@@ -164,13 +164,13 @@ const AddTools = () => {
 
 
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Photo</span>
                     </label>
                     <input
                         type="file"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         {...register("image", {
                             required: {
                                 value: true,
@@ -183,7 +183,7 @@ const AddTools = () => {
                     </label>
                 </div>
 
-                <input className='btn w-full max-w-xs text-white bg-primary' type="submit" value="Add" />
+                <input className='text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary transition-all transition-duration:150ms md:w-1/4 font-medium hover:font-medium px-5 py-2 rounded-md text-sm font-bold cursor-pointer' type="submit" value="Add" />
             </form>
 
         </div>
