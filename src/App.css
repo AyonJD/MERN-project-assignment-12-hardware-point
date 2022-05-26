@@ -153,3 +153,12 @@ ul li a {
 .icon-color {
     color: red;
 }
+
+.icon-color-empty {
+    color: rgb(173, 173, 173);
+}
+
+/* Review card */
+/* .custom-height{
+    height: ;
+} */
