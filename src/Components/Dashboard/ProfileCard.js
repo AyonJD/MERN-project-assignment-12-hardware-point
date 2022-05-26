@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import unknownAvatar from '../../Assets/Images/unknown.jpg'
+import Loader from '../Loader/Loader';
 
 const ProfileCard = ({ singleUser }) => {
     const { displayName, email, photoURL, role, number, address, institute } = singleUser;
     const navigate = useNavigate()
 
+    if (!singleUser) {
+        return <Loader></Loader>
+    }
     // console.log(singleUser)
     return (
         <>

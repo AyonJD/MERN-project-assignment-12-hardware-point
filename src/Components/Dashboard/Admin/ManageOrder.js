@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
-import loader from '../../../Assets/Images/smallLoader.gif'
 import ManageTable from './ManageTable';
 import Modal from '../Modal'
+import Loader from '../../Loader/Loader';
 const ManageOrder = () => {
     const [modal, setModal] = useState({})
     const { data: allorders, isLoading, refetch } = useQuery('allorders', () => fetch(`https://stormy-bayou-62598.herokuapp.com/orders`, {
@@ -14,7 +14,7 @@ const ManageOrder = () => {
     }).then(res => res.json()))
 
     if (isLoading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
     const orderDelete = (id) => {
         // console.log("id want to delete", id);

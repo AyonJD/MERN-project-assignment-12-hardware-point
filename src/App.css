@@ -10,7 +10,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #E73941 !important;
+    color: #0F172A !important;
 }
 
 /* Nav item order */
@@ -50,7 +50,7 @@ ul li a {
 .nav-btn:hover::before {
     height: 100%;
     width: 100%;
-    border: 2px solid #E73941;
+    border: 2px solid #0F172A;
     border-right: none;
     border-bottom: none;
 }
@@ -70,7 +70,7 @@ ul li a {
 .nav-btn:hover::after {
     height: 100%;
     width: 100%;
-    border: 2px solid #E73941;
+    border: 2px solid #0F172A;
     border-left: none;
     border-top: none;
 }
@@ -115,7 +115,7 @@ ul li a {
 }
 
 .custom-border-primary {
-    border-bottom: 10px double #E73941;
+    border-bottom: 10px double #0F172A;
 }
 
 /* My Profle  */

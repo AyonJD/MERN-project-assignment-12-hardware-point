@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import loader from '../../../Assets/Images/smallLoader.gif'
+import Loader from '../../Loader/Loader';
 import UserRow from './UserRow';
 
 
@@ -13,7 +13,7 @@ const AllUser = () => {
     }).then(res => res.json()))
 
     if (isLoading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
     return (
         <div >

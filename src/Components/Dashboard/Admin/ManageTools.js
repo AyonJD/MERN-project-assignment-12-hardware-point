@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import Modal from '../Modal';
 import ToolCard from './ToolCard';
-import loader from '../../../Assets/Images/smallLoader.gif'
+import Loader from '../../Loader/Loader';
 
 const ManageTools = () => {
     const [modal, setModal] = useState({})
@@ -15,7 +15,7 @@ const ManageTools = () => {
     }).then(res => res.json()))
 
     if (isLoading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
 
     const partsDelete = (id) => {

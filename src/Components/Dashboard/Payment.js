@@ -3,7 +3,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import React from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
-import loader from '../../Assets/Images/smallLoader.gif'
+import Loader from '../Loader/Loader';
 import PaymentForm from './PaymentForm';
 
 
@@ -19,7 +19,7 @@ const Payment = () => {
     }).then(res => res.json()))
 
     if (isLoading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
 
     return (

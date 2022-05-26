@@ -4,11 +4,11 @@ import { useAuthState, useSendEmailVerification } from 'react-firebase-hooks/aut
 import { Navigate, useLocation } from 'react-router-dom';
 //import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
-import loader from '../../Assets/Images/smallLoader.gif'
 
 
 import { signOut } from 'firebase/auth';
 import useAdmin from '../Hooks/useAdmin';
+import Loader from '../Loader/Loader';
 const RequireAdmin = ({ children }) => {
     const [user, loading, error] = useAuthState(auth);
     const [admin, adminLoading] = useAdmin(user)
@@ -17,7 +17,7 @@ const RequireAdmin = ({ children }) => {
     //console.log(location);
     // console.log(loading);
     if (loading || adminLoading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
     if (!user || !admin) {
         signOut(auth)

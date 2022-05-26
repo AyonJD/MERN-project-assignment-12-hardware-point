@@ -4,9 +4,9 @@ import { signOut } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import OrderCard from './OrderCard'
 import { toast } from 'react-toastify';
-import loader from '../../Assets/Images/smallLoader.gif'
 import { useQuery } from 'react-query';
 import Modal from './Modal';
+import Loader from '../Loader/Loader';
 const MyOrder = () => {
     const [user] = useAuthState(auth)
     // const [orders, setOrders] = useState([])
@@ -23,7 +23,7 @@ const MyOrder = () => {
     }).then(res => res.json()))
 
     if (isLoading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
 
     const orderDelete = (id) => {

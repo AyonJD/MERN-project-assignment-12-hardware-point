@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import loader from '../../Assets/Images/smallLoader.gif'
 import axios from 'axios';
 import { signOut } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import ProfileCard from './ProfileCard';
+import Loader from '../Loader/Loader';
 
 const MyProfile = () => {
     const [signedUser, loading, error] = useAuthState(auth);
@@ -13,7 +13,7 @@ const MyProfile = () => {
     const navigate = useNavigate();
     // console.log(user)
     if (loading) {
-        return <img src={loader} alt="" />
+        return <Loader></Loader>
     }
 
     // useEffect(() => {
