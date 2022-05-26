@@ -78,7 +78,7 @@ const MyOrder = () => {
                             <th>Phone</th>
                             <th>transaction id </th>
                             <th>Deliver </th>
-                            <th colspan='2'>ProCeed</th>
+                            <th colSpan='2'>ProCeed</th>
 
 
                         </tr>

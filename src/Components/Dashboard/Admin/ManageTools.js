@@ -70,7 +70,7 @@ const ManageTools = () => {
                             <th>Stock</th>
                             <th>Minimum-Order</th>
                             <th>Details</th>
-                            <th colspan='2'>Manage</th>
+                            <th colSpan='2'>Manage</th>
 
 
                         </tr>

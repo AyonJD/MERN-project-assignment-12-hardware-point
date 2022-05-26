@@ -34,7 +34,7 @@ const AddReview = () => {
             <h1>Please leave a review</h1>
             <StarRating setCustomRating={setCustomRating}></StarRating>
             <form onSubmit={handleSubmit(onSubmitReview)}>
-                <textarea class="textarea textarea-bordered w-1/2" placeholder="Your Review"
+                <textarea className="textarea textarea-bordered w-1/2" placeholder="Your Review"
                     {...register("review", { required: true, minLength: 10 })}
                 ></textarea>
                 <div className='text-center'>

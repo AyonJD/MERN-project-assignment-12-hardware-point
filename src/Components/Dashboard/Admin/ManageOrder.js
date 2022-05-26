@@ -76,7 +76,7 @@ const ManageOrder = () => {
                             <th>Quantity</th>
                             <th>Address</th>
                             <th>Phone</th>
-                            <th colspan='2'>Action</th>
+                            <th colSpan='2'>Action</th>
 
 
                         </tr>
