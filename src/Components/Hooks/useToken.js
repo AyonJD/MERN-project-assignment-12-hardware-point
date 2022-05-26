@@ -11,7 +11,7 @@
 //            // console.log({ email });
 //             if (email) {
 //               //  const { data } = await axios.post('https://powerful-dawn-49608.herokuapp.com/signin', { email })
-//                 const { data } = await axios.post('http://localhost:5000/signin', { email })
+//                 const { data } = await axios.post('https://stormy-bayou-62598.herokuapp.com/signin', { email })
 //                // console.log(data.getToken);
 //                 setToken(data.getToken);
 //                 localStorage.setItem('token', data.getToken);
@@ -40,7 +40,7 @@ const useToken = (user, userName) => {
             // console.log(userName);
             const currentUser = { email: email, displayName: displayName, photoURL: user?.photoURL }
             if (email) {
-                fetch(`http://localhost:5000/user/${email}`, {
+                fetch(`https://stormy-bayou-62598.herokuapp.com/user/${email}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

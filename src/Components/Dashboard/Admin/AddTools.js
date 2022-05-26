@@ -30,7 +30,7 @@ const AddTools = () => {
                         image: img
                     }
                     //send data to db
-                    fetch(`http://localhost:5000/tools`, {
+                    fetch(`https://stormy-bayou-62598.herokuapp.com/tools`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

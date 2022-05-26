@@ -15,7 +15,7 @@ const AddReview = () => {
             review: data.review,
             user
         }
-        fetch('http://localhost:5000/reviews/', {
+        fetch('https://stormy-bayou-62598.herokuapp.com/reviews/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

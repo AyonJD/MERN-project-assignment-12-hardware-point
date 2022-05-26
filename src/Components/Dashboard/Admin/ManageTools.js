@@ -7,7 +7,7 @@ import loader from '../../../Assets/Images/smallLoader.gif'
 
 const ManageTools = () => {
     const [modal, setModal] = useState({})
-    const { data: allParts, isLoading, refetch } = useQuery('allParts', () => fetch(`http://localhost:5000/tools`, {
+    const { data: allParts, isLoading, refetch } = useQuery('allParts', () => fetch(`https://stormy-bayou-62598.herokuapp.com/tools`, {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('token')}`
@@ -21,7 +21,7 @@ const ManageTools = () => {
     const partsDelete = (id) => {
 
 
-        fetch(`http://localhost:5000/tools/${id}`, {
+        fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`, {
             method: 'DELETE',
             headers: {
                 "content-type": "application/json",

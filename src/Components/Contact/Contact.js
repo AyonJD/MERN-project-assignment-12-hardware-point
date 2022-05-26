@@ -1,19 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Contact = () => {
+const Contact = ({ children }) => {
+    // console.log(children)
     return (
         <div>
             <section className="text-gray-700 body-font relative">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-12">
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-                            Contact Us
-                        </h1>
-                        <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                            gentrify.
-                        </p>
+
+                        <div className='custom-border-primary w-fit mx-auto pb-4'>
+                            <h1 className="text-uppercase text-center text-primary text-4xl md:text-5xl mt-20 font-semibold mb-3 ">
+                                {children}
+                            </h1>
+                            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+                                gentrify.
+                            </p>
+                        </div>
+
                     </div>
                     <div className="lg:w-1/2 md:w-2/3 mx-auto">
                         <div className="flex flex-wrap -m-2">
@@ -26,7 +31,7 @@ const Contact = () => {
                                         type="text"
                                         id="name"
                                         name="name"
-                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#6D9900] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
                             </div>
@@ -42,7 +47,7 @@ const Contact = () => {
                                         type="email"
                                         id="email"
                                         name="email"
-                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#6D9900] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     />
                                 </div>
                             </div>
@@ -57,17 +62,17 @@ const Contact = () => {
                                     <textarea
                                         id="message"
                                         name="message"
-                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-[#6D9900] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                                        className="w-full bg-gray-100 rounded border border-gray-300 focus:border-primary h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                                     ></textarea>
                                 </div>
                             </div>
                             <div className="p-2 w-full">
-                                <button className="flex mx-auto text-white bg-[#6D9900] border-0 py-2 px-8 focus:outline-none hover:bg-[#6D9900] rounded text-lg cursor-pointer">
+                                <button className="flex mx-auto tmd:ml-24 text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary transition-all transition-duration:150ms font-medium hover:font-medium px-8 py-2 rounded-md">
                                     Send
                                 </button>
                             </div>
                             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                                <a className="text-[#6D9900]">programminghero@email.com</a>
+                                <a className="text-primary">programminghero@email.com</a>
                                 <p className="leading-normal my-5">
                                     49 Smith St.
                                     <br />

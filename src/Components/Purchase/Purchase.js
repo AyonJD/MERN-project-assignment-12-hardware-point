@@ -15,7 +15,7 @@ const Purchase = () => {
     const [userInputData, setuserInputData] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/tools/${id}`)
+        fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`)
             .then(res => res.json())
             .then(data => setTool(data))
     }, [id, tool])
@@ -60,7 +60,7 @@ const Purchase = () => {
         } else {
             const newQuantity = parseInt(availableQuantity) - parseInt(quantity)
             const newQuantityObj = { newQuantity }
-            fetch(`http://localhost:5000/tools/${id}`, {
+            fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -75,7 +75,7 @@ const Purchase = () => {
                 })
 
             //post order to database
-            fetch('http://localhost:5000/orders', {
+            fetch('https://stormy-bayou-62598.herokuapp.com/orders', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

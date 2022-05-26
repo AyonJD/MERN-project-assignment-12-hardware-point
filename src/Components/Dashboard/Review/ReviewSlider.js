@@ -15,7 +15,7 @@ import SingleReviews from "./SingleReviews";
 export default function App() {
     const [reviewes, setReviewes] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/reviews/")
+        fetch("https://stormy-bayou-62598.herokuapp.com/reviews/")
             .then(res => res.json())
             .then(res => {
                 setReviewes(res);
