@@ -1,0 +1,45 @@
+.SkillsData {
+    margin-bottom: 0rem;
+  }
+  .Skills-Title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-style: italic;
+    margin-bottom: -0.8rem;
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+  .skillbar {
+    width: 99% !important;
+    margin-bottom: 10px !important;
+    margin-top: 2rem !important;
+  }
+  .skillbar-title {
+    background: white !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+  }
+  .skillbar-title span {
+    background: none !important;
+    color: #6ab5d4;
+    text-align: left !important;
+    margin-left: -1.5rem !important;
+  }
+  
+  .skillbar-percent {
+    display: none !important;
+  }
+  
+  .skillbar-bar {
+    transition: none !important;
+  }
+  
+  .printDivs {
+    display: none;
+    margin-top: 2rem;
+  }
+  

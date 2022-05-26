@@ -23,6 +23,7 @@ import RequiredAuth from './Components/RequiredAuth/RequiredAuth';
 import UpdateProfile from './Components/Dashboard/UpdateProfile';
 import Payment from './Components/Dashboard/Payment';
 import Blog from './Components/Blog/Blog';
+import Portfolio from './Components/Portfolio/Portfolio';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/tools' element={<AllTools></AllTools>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path="dashboard" element={<RequiredAuth>
           <Dashboard />
         </RequiredAuth>} >

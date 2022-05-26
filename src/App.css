@@ -158,7 +158,18 @@ ul li a {
     color: rgb(173, 173, 173);
 }
 
-/* Review card */
-/* .custom-height{
-    height: ;
-} */
+/* Auto Typer */
+.auto-type span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.auto-type p {
+    line-height: 1.7;
+    word-spacing: 1px;
+}
+
+/* Portfolio width */
+.custom-width {
+    width: 120%;
+}
