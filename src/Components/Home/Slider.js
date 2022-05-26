@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function App() {
     return (
-        <>
+        <div className="">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -30,12 +30,15 @@ export default function App() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src={slideOne} alt="" />
+                    <div className="image-slide-bgOne"></div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={slideTwo} alt="" />
+                    <div className="image-slide-bgTwo"></div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="image-slide-bgThree"></div>
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 }
