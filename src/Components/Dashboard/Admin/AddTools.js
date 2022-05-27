@@ -183,7 +183,7 @@ const AddTools = () => {
                     </label>
                 </div>
 
-                <input className='text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary transition-all transition-duration:150ms md:w-1/4 font-medium hover:font-medium px-5 py-2 rounded-md text-sm font-bold cursor-pointer' type="submit" value="Add" />
+                <input className='text-white bg-gradient-to-r from-primary to-secondary border-2 border-secondary hover:border-2 hover:border-primary hover:bg-gradient hover:from-white hover:to-white hover:text-primary transition-all transition-duration:150ms md:w-1/4  hover:font-medium px-5 py-2 rounded-md text-sm font-bold cursor-pointer' type="submit" value="Add" />
             </form>
 
         </div>

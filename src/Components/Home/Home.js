@@ -8,12 +8,14 @@ import imageOne from '../../Assets/Images/1.jpg'
 import imageTwo from '../../Assets/Images/2.jpg'
 import imageThree from '../../Assets/Images/3.jpg'
 import shape from '../../Assets/Images/curveAsymmetrical.svg'
+import shapeTwo from '../../Assets/Images/triangleAsymmetrical.svg'
 import useTools from '../Hooks/useTools';
 import ToolsCard from '../ToolsCard/ToolsCard';
 import { useNavigate } from 'react-router-dom';
 import ReviewSlider from '../Dashboard/Review/ReviewSlider';
 import Accordion from './Accordion/Accordion';
 import Contact from '../Contact/Contact'
+import Loader from '../Loader/Loader';
 
 const Home = () => {
     const [tools, setTools] = useTools();
@@ -22,6 +24,9 @@ const Home = () => {
     const navigate = useNavigate()
     const handlePurchase = id => {
         navigate(`/tools/${id}`)
+    }
+    if (!tools) {
+        return <Loader></Loader>
     }
     return (
         <div className='mb-10'>
@@ -61,8 +66,15 @@ const Home = () => {
                     reversedTools.slice(0, 6).map(tool => <ToolsCard handlePurchase={handlePurchase} tool={tool} key={tool._id}></ToolsCard>)
                 }
             </div>
-            <div className='container mx-auto my-100'>
-                <ReviewSlider></ReviewSlider>
+            {/* Review */}
+            <div className="bg-gradient-to-b from-primary to-secondary pb-10 mb-16">
+                <div className="custom-shape-divider-top-1653206227">
+                    <img src={shapeTwo} alt="" />
+                </div>
+                <div className='container mx-auto'>
+                    <h1 className='text-uppercase text-center text-white text-4xl md:text-5xl font-semibold custom-border w-fit mx-auto pb-4 mb-8 pt-8 md:pt-0 md:mb-16'>What Our Customer Says</h1>
+                    <ReviewSlider ></ReviewSlider>
+                </div>
             </div>
 
             {/* Accordion */}

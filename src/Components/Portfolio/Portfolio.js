@@ -11,9 +11,10 @@ const Portfolio = () => {
         <>
             <div className='md:flex justify-between container mx-auto px-4 md:px-0 md:my-14'>
                 <div className="auto-type flex-1">
+                    <span>I'm </span>
                     <AutoTyping
                         active // <boolean>
-                        textRef="I'm Ayon Jodder." // <string>
+                        textRef="Ayon Jodder." // <string>
                         writeSpeed={150} // <number>
                         deleteSpeed={150} // <number>
                         delayToWrite={1000} // <number>

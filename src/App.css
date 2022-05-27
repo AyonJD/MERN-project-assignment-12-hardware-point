@@ -157,7 +157,7 @@ ul li a {
 
 /* Rating icon */
 .icon-color {
-    color: red;
+    color: #F5C60D;
 }
 
 .icon-color-empty {
@@ -323,8 +323,7 @@ ul li a {
     padding: 18px;
 }
 
-/* body{
-    background: #0F172A !important;
-} */
-
-/* Progress nar */
+/* loader */
+.loader-h-w {
+    height: calc(100vh - 146px);
+}

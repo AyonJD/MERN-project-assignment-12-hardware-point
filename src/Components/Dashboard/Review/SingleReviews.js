@@ -60,7 +60,7 @@ const SingleReviews = ({ singleReview }) => {
         <div className="card w-96 bg-base-100 shadow-xl h-[450px] mr-0">
             <figure className="px-10 pt-10">
                 <img className="w-1/2 rounded-full mx-auto" src={
-                    user ? user?.photoURL : unknownImage
+                    user?.photoURL ? user?.photoURL : unknownImage
                 } alt={user?.displayName} />
             </figure>
             <div className="card-body items-center text-center">

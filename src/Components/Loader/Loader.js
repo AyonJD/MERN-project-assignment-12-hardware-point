@@ -3,7 +3,7 @@ import loader from '../../Assets/Images/loading-white.gif'
 
 const Loader = () => {
     return (
-        <div className='h-full w-full flex items-center justify-center'>
+        <div className='loader-h-w flex items-center justify-center'>
             <img className='w-32' src={loader} alt="" />
         </div>
     );

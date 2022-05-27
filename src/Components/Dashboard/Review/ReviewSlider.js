@@ -27,23 +27,38 @@ export default function App() {
     return (
         <>
             <Swiper
-                slidesPerView={3}
-                spaceBetween={30}
-                freeMode={true}
+                slidesPerView={1}
+                spaceBetween={10}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[FreeMode, Pagination]}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                }}
+                modules={[Pagination]}
                 className="mySwiper"
             >
-                {
-                    reversedReviewes?.map(singleReview => <SwiperSlide key={singleReview._id}>
-                        <SingleReviews
-                            singleReview={singleReview}
-                        />
+                <div className="border-2 border-slate-600">
+                    {
+                        reversedReviewes?.map(singleReview => <SwiperSlide key={singleReview._id}>
+                            <SingleReviews
+                                singleReview={singleReview}
+                            />
 
-                    </SwiperSlide>)
-                }
+                        </SwiperSlide>)
+                    }
+                </div>
 
             </Swiper>
         </>
