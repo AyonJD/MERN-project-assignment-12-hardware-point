@@ -13,7 +13,7 @@ const UpdateProfile = () => {
     // console.log(user);
 
     useEffect(() => {
-        fetch(`https://stormy-bayou-62598.herokuapp.com/user/${authUser?.email}`, {
+        fetch(`https://hardware-server.up.railway.app/user/${authUser?.email}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const UpdateProfile = () => {
                                 "https://foxdogconsultants.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
                         };
                         console.log(userInfo);
-                        fetch(`https://stormy-bayou-62598.herokuapp.com/user/${authUser.email}`, {
+                        fetch(`https://hardware-server.up.railway.app/user/${authUser.email}`, {
                             method: "PUT",
                             headers: {
                                 "Content-Type": "application/json",
@@ -101,7 +101,7 @@ const UpdateProfile = () => {
                     "https://foxdogconsultants.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png",
             };
             // console.log(userInfo);
-            fetch(`https://stormy-bayou-62598.herokuapp.com/user/${authUser.email}`, {
+            fetch(`https://hardware-server.up.railway.app/user/${authUser.email}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

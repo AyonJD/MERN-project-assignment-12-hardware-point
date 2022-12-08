@@ -15,7 +15,7 @@ const MyOrder = () => {
     const [modal, setModal] = useState({})
 
     const email = user?.email
-    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch(`https://stormy-bayou-62598.herokuapp.com/orders/${email}`, {
+    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch(`https://hardware-server.up.railway.app/orders/${email}`, {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('token')}`
@@ -30,7 +30,7 @@ const MyOrder = () => {
 
 
 
-        fetch(`https://stormy-bayou-62598.herokuapp.com/orders/${id}`, {
+        fetch(`https://hardware-server.up.railway.app/orders/${id}`, {
             method: 'DELETE',
             headers: {
                 "content-type": "application/json",

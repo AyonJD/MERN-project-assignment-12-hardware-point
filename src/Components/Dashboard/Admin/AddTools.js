@@ -30,7 +30,7 @@ const AddTools = () => {
                         image: img
                     }
                     //send data to db
-                    fetch(`https://stormy-bayou-62598.herokuapp.com/tools`, {
+                    fetch(`https://hardware-server.up.railway.app/tools`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

@@ -10,7 +10,7 @@ import PaymentForm from './PaymentForm';
 const stripePromise = loadStripe('pk_test_51L3PqJCnJiLLpGIeL4Uixr7K4bJ183L3tSUyFg2ENBX5ovRQKSQhaYTR8kG7WbcfvkvyuLa5RfB9eZlBJfohfpYd00PM7gqopw');
 const Payment = () => {
     const { id } = useParams()
-    const url = `https://stormy-bayou-62598.herokuapp.com/payment/${id}`
+    const url = `https://hardware-server.up.railway.app/payment/${id}`
     const { data: myOrder, refetch, isLoading } = useQuery(['myOrder', id], () => fetch(url, {
         method: 'GET',
         headers: {

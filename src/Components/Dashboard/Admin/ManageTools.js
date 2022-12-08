@@ -7,7 +7,7 @@ import Loader from '../../Loader/Loader';
 
 const ManageTools = () => {
     const [modal, setModal] = useState({})
-    const { data: allParts, isLoading, refetch } = useQuery('allParts', () => fetch(`https://stormy-bayou-62598.herokuapp.com/tools`, {
+    const { data: allParts, isLoading, refetch } = useQuery('allParts', () => fetch(`https://hardware-server.up.railway.app/tools`, {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('token')}`
@@ -21,7 +21,7 @@ const ManageTools = () => {
     const partsDelete = (id) => {
 
 
-        fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`, {
+        fetch(`https://hardware-server.up.railway.app/tools/${id}`, {
             method: 'DELETE',
             headers: {
                 "content-type": "application/json",

@@ -37,7 +37,7 @@ const UpdateTool = () => {
                         image: img
                     }
                     //send data to db
-                    fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`, {
+                    fetch(`https://hardware-server.up.railway.app/tools/${id}`, {
                         method: 'PATCH',
                         headers: {
                             'content-type': 'application/json',

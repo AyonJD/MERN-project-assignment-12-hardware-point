@@ -16,7 +16,7 @@ const Purchase = () => {
     const [userInputData, setuserInputData] = useState({});
 
     useEffect(() => {
-        fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`)
+        fetch(`https://hardware-server.up.railway.app/tools/${id}`)
             .then(res => res.json())
             .then(data => setTool(data))
     }, [id, tool])
@@ -61,7 +61,7 @@ const Purchase = () => {
         } else {
             const newQuantity = parseInt(availableQuantity) - parseInt(quantity)
             const newQuantityObj = { newQuantity }
-            fetch(`https://stormy-bayou-62598.herokuapp.com/tools/${id}`, {
+            fetch(`https://hardware-server.up.railway.app/tools/${id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -76,7 +76,7 @@ const Purchase = () => {
                 })
 
             //post order to database
-            fetch('https://stormy-bayou-62598.herokuapp.com/orders', {
+            fetch('https://hardware-server.up.railway.app/orders', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

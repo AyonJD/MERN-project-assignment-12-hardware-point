@@ -7,7 +7,7 @@ const useAdmin = user => {
         const email = user?.email
 
         if (email) {
-            fetch(`https://stormy-bayou-62598.herokuapp.com/admin/${email}`, {
+            fetch(`https://hardware-server.up.railway.app/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',

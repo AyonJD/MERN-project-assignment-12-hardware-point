@@ -5,7 +5,7 @@ const useTool = (id) => {
     const [part, setPart] = useState([]);
     useEffect(() => {
 
-        const url = `https://stormy-bayou-62598.herokuapp.com/tools/${id}`
+        const url = `https://hardware-server.up.railway.app/tools/${id}`
         fetch(url)
             .then(response => response.json())
             .then(data => setPart(data))

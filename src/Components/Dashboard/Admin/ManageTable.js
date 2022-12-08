@@ -49,7 +49,7 @@ const ManageTable = ({ o, index, refetch, sendEvent, setModal }) => {
 
     const [user] = useAuthState(auth)
     const makeShip = () => {
-        fetch(`https://stormy-bayou-62598.herokuapp.com/ship/${_id}`, {
+        fetch(`https://hardware-server.up.railway.app/ship/${_id}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('token')}`

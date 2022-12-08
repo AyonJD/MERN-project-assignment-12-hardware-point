@@ -17,7 +17,7 @@ export default function App() {
     const reviewesCopy = [...reviewes];
     const reversedReviewes = reviewesCopy?.reverse();
     useEffect(() => {
-        fetch("https://stormy-bayou-62598.herokuapp.com/reviews/")
+        fetch("https://hardware-server.up.railway.app/reviews/")
             .then(res => res.json())
             .then(res => {
                 setReviewes(res);

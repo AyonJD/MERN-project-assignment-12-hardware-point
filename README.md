@@ -6,7 +6,7 @@ Live site:-[Hardware Point.](https://assignment12-685d7.web.app/).
 
 # Back-end
 
-API:-[Backend](https://stormy-bayou-62598.herokuapp.com/).
+API:-[Backend](https://hardware-server.up.railway.app/).
 
 
 ## Description:
